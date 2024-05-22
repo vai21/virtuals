@@ -1,0 +1,5 @@
+const constants = {
+  PAGING_LIMIT: 10,
+};
+
+module.exports = constants;

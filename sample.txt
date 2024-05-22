@@ -1,0 +1,103 @@
+sample payload
+
+curl --location 'localhost:3000/api/user/recommendation' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "Rasid",
+    "age": "30",
+    "gender": "Male",
+    "location": "San Jose",
+    "university": "Columbia University",
+    "interest": "Gaming"
+}'
+
+sample response
+
+{
+    "message": "success",
+    "data": {
+        "count": 21,
+        "rows": [
+            {
+                "id": 2,
+                "name": "David Miller",
+                "age": 22,
+                "gender": "Female",
+                "location": "San Jose",
+                "university": "Columbia University"
+            },
+            {
+                "id": 31,
+                "name": "Isabel Smith",
+                "age": 22,
+                "gender": "Male",
+                "location": "San Jose",
+                "university": "Princeton University"
+            },
+            {
+                "id": 87,
+                "name": "Charlie Wilson",
+                "age": 25,
+                "gender": "Female",
+                "location": "Los Angeles",
+                "university": "University of Chicago"
+            },
+            {
+                "id": 90,
+                "name": "Frank Moore",
+                "age": 27,
+                "gender": "Male",
+                "location": "San Diego",
+                "university": "Massachusetts Institute of Technology"
+            },
+            {
+                "id": 17,
+                "name": "Alice Miller",
+                "age": 31,
+                "gender": "Female",
+                "location": "San Jose",
+                "university": "Columbia University"
+            },
+            {
+                "id": 81,
+                "name": "Bob Moore",
+                "age": 35,
+                "gender": "Male",
+                "location": "Phoenix",
+                "university": "Princeton University"
+            },
+            {
+                "id": 25,
+                "name": "Emma Brown",
+                "age": 35,
+                "gender": "Female",
+                "location": "Los Angeles",
+                "university": "Columbia University"
+            },
+            {
+                "id": 75,
+                "name": "Bob Davis",
+                "age": 36,
+                "gender": "Male",
+                "location": "Los Angeles",
+                "university": "Columbia University"
+            },
+            {
+                "id": 33,
+                "name": "Henry Miller",
+                "age": 36,
+                "gender": "Female",
+                "location": "Chicago",
+                "university": "Yale University"
+            },
+            {
+                "id": 22,
+                "name": "Alice Jones",
+                "age": 39,
+                "gender": "Female",
+                "location": "Phoenix",
+                "university": "Yale University"
+            }
+        ]
+    }
+}
