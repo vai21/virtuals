@@ -1,17 +1,16 @@
+Database dump
+- Dump20240522
 
-For installing backend
-cd backend
-npm i
-npm run dev
-=============================
-env files
-=============================
-DATABASE=virtuals
-DB_USER=root
-DB_PASS=123456
-DB_HOST=localhost
-DB_PORT=3306
-PORT=3000
-=============================
-database dump Dump20240522
-=============================
+For installing Backend
+- install mysql and create database virtuals, then run sql virtuals_users.sql
+- cd backend
+- npm i
+- npm run dev
+
+For installing Frontend
+- cd frontend
+- npm i
+- npm run start
+
+Demo
+- Please look React App - ... .mp4
